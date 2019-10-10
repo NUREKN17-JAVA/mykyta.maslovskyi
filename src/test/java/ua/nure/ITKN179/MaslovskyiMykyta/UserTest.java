@@ -11,30 +11,30 @@ public class UserTest extends TestCase {
     private static final int CURRENT_YEAR = 2019;
     private static final int YEAR_OF_BIRTH = 2000;
     
-    //Òåñò1 - äåíü ðîæäåíèÿ âæå ïðîøåë
+    // (1.Test_ день народження буде у іншому місяці цього дня)
     private static final int ETALONE_AGE_1 = CURRENT_YEAR - YEAR_OF_BIRTH;
-    private static final int DAY_OF_BIRTH_1 = 5;
-    private static final int MONTH_OF_BIRTH_1 = Calendar.APRIL;
+    private static final int DAY_OF_BIRTH_1 = 10;
+    private static final int MONTH_OF_BIRTH_1 = Calendar.NOVEMBER;
     
-    //Òåñò2 - äåíü ðîæäåíèÿ ïðîéøîâ íî ì³ñÿöü äíÿ íàðîäæåííÿ ùå èäåò
+    // (2.Test_ день народження сьогодні)
     private static final int ETALONE_AGE_2 = CURRENT_YEAR - YEAR_OF_BIRTH;
-    private static final int DAY_OF_BIRTH_2 = 7;
+    private static final int DAY_OF_BIRTH_2 = 10;
     private static final int MONTH_OF_BIRTH_2 = Calendar.OCTOBER;
     
-    // Òåñò3 -äåíü ðîæäåíèÿ ñåãîäÿ
+    // (3.Test_ день народження буде у цьому місяці, але ще настав)
     private static final int ETALONE_AGE_3 = CURRENT_YEAR - YEAR_OF_BIRTH;
-    private static final int DAY_OF_BIRTH_3 = 9;
+    private static final int DAY_OF_BIRTH_3 = 15;
     private static final int MONTH_OF_BIRTH_3 = Calendar.OCTOBER;
     
-    // Òåñò4 - äåíü ðîæäåíèÿ â ýòîì ìåñÿöå åùå íå íàñòàëî
+    // (4.Test_ день народження вже настав у цьому місяці)
     private static final int ETALONE_AGE_4 = CURRENT_YEAR - YEAR_OF_BIRTH - 1;
-    private static final int DAY_OF_BIRTH_4 = 21;
+    private static final int DAY_OF_BIRTH_4 = 3;
     private static final int MONTH_OF_BIRTH_4 = Calendar.OCTOBER;
     
-    // Òåñò5 - äåíü ðîæäåíèÿ íå íàñòàë â ýòîì ìåñÿöå íî áóäåò â äðóãîì
+    // (5.Test_ день народження вже настав у цьому році)
     private static final int ETALONE_AGE_5 = CURRENT_YEAR - YEAR_OF_BIRTH - 1;
     private static final int DAY_OF_BIRTH_5 = 11;
-    private static final int MONTH_OF_BIRTH_5 = Calendar.DECEMBER;
+    private static final int MONTH_OF_BIRTH_5 = Calendar.MAY;
 
     
     private User user;
