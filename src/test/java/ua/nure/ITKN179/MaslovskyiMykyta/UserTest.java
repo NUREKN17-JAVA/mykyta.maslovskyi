@@ -11,27 +11,27 @@ public class UserTest extends TestCase {
     private static final int CURRENT_YEAR = 2019;
     private static final int YEAR_OF_BIRTH = 2000;
     
-    //Тест1 - день рождения вже прошел.  
+    //Г’ГҐГ±ГІ1 - Г¤ГҐГ­Гј Г°Г®Г¦Г¤ГҐГ­ГЁГї ГўГ¦ГҐ ГЇГ°Г®ГёГҐГ«
     private static final int ETALONE_AGE_1 = CURRENT_YEAR - YEAR_OF_BIRTH;
     private static final int DAY_OF_BIRTH_1 = 5;
     private static final int MONTH_OF_BIRTH_1 = Calendar.APRIL;
     
-    //Тест2 - день рождения пройшов но місяць дня народження ще идет.
+    //Г’ГҐГ±ГІ2 - Г¤ГҐГ­Гј Г°Г®Г¦Г¤ГҐГ­ГЁГї ГЇГ°Г®Г©ГёГ®Гў Г­Г® Г¬ВіГ±ГїГ¶Гј Г¤Г­Гї Г­Г Г°Г®Г¤Г¦ГҐГ­Г­Гї Г№ГҐ ГЁГ¤ГҐГІ
     private static final int ETALONE_AGE_2 = CURRENT_YEAR - YEAR_OF_BIRTH;
     private static final int DAY_OF_BIRTH_2 = 7;
     private static final int MONTH_OF_BIRTH_2 = Calendar.OCTOBER;
     
-    // Тест3 -день рождения сегодя.
+    // Г’ГҐГ±ГІ3 -Г¤ГҐГ­Гј Г°Г®Г¦Г¤ГҐГ­ГЁГї Г±ГҐГЈГ®Г¤Гї
     private static final int ETALONE_AGE_3 = CURRENT_YEAR - YEAR_OF_BIRTH;
     private static final int DAY_OF_BIRTH_3 = 9;
     private static final int MONTH_OF_BIRTH_3 = Calendar.OCTOBER;
     
-    // Тест4 - день рождения в этом месяце еще не настало
+    // Г’ГҐГ±ГІ4 - Г¤ГҐГ­Гј Г°Г®Г¦Г¤ГҐГ­ГЁГї Гў ГЅГІГ®Г¬ Г¬ГҐГ±ГїГ¶ГҐ ГҐГ№ГҐ Г­ГҐ Г­Г Г±ГІГ Г«Г®
     private static final int ETALONE_AGE_4 = CURRENT_YEAR - YEAR_OF_BIRTH - 1;
     private static final int DAY_OF_BIRTH_4 = 21;
     private static final int MONTH_OF_BIRTH_4 = Calendar.OCTOBER;
     
-    // Тест5 - день рождения не настал в этом месяце но будет в другом.
+    // Г’ГҐГ±ГІ5 - Г¤ГҐГ­Гј Г°Г®Г¦Г¤ГҐГ­ГЁГї Г­ГҐ Г­Г Г±ГІГ Г« Гў ГЅГІГ®Г¬ Г¬ГҐГ±ГїГ¶ГҐ Г­Г® ГЎГіГ¤ГҐГІ Гў Г¤Г°ГіГЈГ®Г¬
     private static final int ETALONE_AGE_5 = CURRENT_YEAR - YEAR_OF_BIRTH - 1;
     private static final int DAY_OF_BIRTH_5 = 11;
     private static final int MONTH_OF_BIRTH_5 = Calendar.DECEMBER;
